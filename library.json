@@ -1,7 +1,7 @@
 {
   "name": "ClockAnalog",
   "keywords": "clock, analog",
-  "description": "Library for Arduino to control analog clock motor",
+  "description": "Arduino Library to control analog clock with Lavet type stepping motor",
   "repository":
   {
     "type": "git",
