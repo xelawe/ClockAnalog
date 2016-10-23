@@ -1,7 +1,7 @@
 {
   "name": "ClockAnalog",
   "keywords": "clock, analog",
-  "description": "",
+  "description": "Library for Arduino to control analog clock motor",
   "repository":
   {
     "type": "git",
