@@ -1,7 +1,7 @@
 /*
 Arduino Library to control analog clock with Lavet type stepping motor
 */
-#include "Arduino.h"
+//#include "Arduino.h"
 
 #include "ClockAnalog.h"
 
