@@ -5,3 +5,4 @@ step_min	KEYWORD2
 init	KEYWORD2
 init_time	KEYWORD2
 adjust_time	KEYWORD2
+time	KEYWORD2
