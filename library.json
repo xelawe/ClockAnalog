@@ -8,6 +8,6 @@
     "url": "https://github.com/xelawe/ClockAnalog.git"
   },
   "frameworks": "arduino",
-  "platforms": "avr",
+  "platforms": "*",
   "version": "0.1"
 }
