@@ -1,0 +1,13 @@
+{
+  "name": "ClockAnalog",
+  "keywords": "clock, analog",
+  "description": "",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/xelawe/ClockAnalog.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "avr",
+  "version": "0.1"
+}
