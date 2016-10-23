@@ -15,6 +15,7 @@ class ClockAnalog
     ClockAnalog(int iv_PINMOT1, int iv_PINMOT2, int iv_pulsewidth);
     void init();
     void init_time( time_t iv_time );
+    void set_time( time_t iv_time );
     int  adjust_time( time_t iv_time );
     void step();
     void step_sec(int iv_sec);

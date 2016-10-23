@@ -39,6 +39,12 @@ void ClockAnalog::init_time( time_t iv_time ) {
 
 }
 
+void ClockAnalog::set_time( time_t iv_time ) {
+
+  _mv_clock_time = iv_time;
+
+}
+
 int ClockAnalog::adjust_time(time_t iv_time) {
   time_t sys_time = iv_time;
   time_t clock_time = _mv_clock_time;
