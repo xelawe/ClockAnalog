@@ -1,5 +1,6 @@
-// Library to control analog clock with pulse motor
-
+/*
+Arduino Library to control analog clock with Lavet type stepping motor
+*/
 #ifndef ClockAnalog_h
 #define ClockAnalog_h
 
