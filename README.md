@@ -1,2 +1,2 @@
-# GlockAnalog
-Arduino Library to control analog clock motor
+# ClockAnalog
+Arduino Library to control analog clock with Lavet type stepping motor
