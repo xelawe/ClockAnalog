@@ -9,6 +9,8 @@ Arduino Library to control analog clock with Lavet type stepping motor
 #include <Time.h> //http://www.arduino.cc/playground/Code/Time
 #include <TimeLib.h>
 
+#define 12h_sec 43200
+
 class ClockAnalog
 {
   public:
