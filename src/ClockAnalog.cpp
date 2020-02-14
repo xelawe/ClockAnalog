@@ -69,8 +69,8 @@ int ClockAnalog::adjust_time(time_t iv_time) {
     
     // if difference > 12h -> calculate remainder and add the rest to actual time
     // it makes no sense to catch up with greater differences
-    if ( diff_time >= 12h_sec ){
-      int diff_rem = diff_time % 12h_sec;
+    if ( diff_time >= gc_12h_sec ){
+      int diff_rem = diff_time % gc_12h_sec;
       // add Difference minus remainder to actual time
       _mv_clock_time = _mv_clock_time + diff_time - diff_rem;
       // Continue with remainder
