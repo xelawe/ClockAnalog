@@ -66,8 +66,21 @@ int ClockAnalog::adjust_time(time_t iv_time) {
     diff_time = sys_time - clock_time;
     //DebugPrint("Diff : " + String(year(diff_time)) + "." + String(month(diff_time)) + "." + String(day(diff_time)) );
     //DebugPrintln(", " + String(hour(diff_time)) + ":" + String(minute(diff_time)) + ":" + String(second(diff_time)) );
-
+    
+    // if difference > 12h -> calculate remainder and add the rest to actual time
+    // it makes no sense to catch up with greater differences
+    if ( diff_time >= 43200 ){
+      int diff_rem = diff_time % 43200;
+      // add Difference minus remainder to actual time
+      _mv_clock_time = _mv_clock_time + diff_time - diff_rem;
+      // Continue with remainder
+      diff_time = diff_rem;
+    }
+    
+    // convert Difference to int
     lv_diff_sec = diff_time;
+    
+    // Don't adjust a difference of 1 sec, this would just lead to jitter ...
     if ( lv_diff_sec > 1) {
       _mv_diff_sec = lv_diff_sec;
     }
